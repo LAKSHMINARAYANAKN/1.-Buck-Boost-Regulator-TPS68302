@@ -1,0 +1,345 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Screw_Terminal_01x02
+#
+DEF Connector_Screw_Terminal_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Screw_Terminal_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_TestPoint
+#
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Jumper_NC_Small
+#
+DEF Device_Jumper_NC_Small JP 0 30 N N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Device_Jumper_NC_Small" 10 -60 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A 0 -10 57 450 1350 0 1 0 N 40 30 -40 30
+C -40 0 20 0 1 0 N
+C 40 0 20 0 1 0 N
+X 1 1 -100 0 40 R 50 50 0 1 P
+X 2 2 100 0 40 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_L
+#
+DEF Device_L L 0 40 N N 1 F N
+F0 "L" -50 0 50 V V C CNN
+F1 "Device_L" 75 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_LED
+#
+DEF Device_LED D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# EC-25_TPS63802
+#
+DEF EC-25_TPS63802 U 0 40 Y Y 1 F N
+F0 "U" -650 400 79 H V C CNN
+F1 "EC-25_TPS63802" -650 300 79 H V C CNN
+F2 "" -650 400 79 H I C CNN
+F3 "" -650 400 79 H I C CNN
+DRAW
+S 50 50 1550 -1700 0 1 12 N
+X EN 1 -150 -750 197 R 98 98 1 1 P
+X VIN 10 -150 -100 197 R 98 98 1 1 P
+X MODE 2 -150 -1500 197 R 98 98 1 1 P
+X AGND 3 1750 -1400 197 L 98 98 1 1 P
+X FB 4 1750 -1100 197 L 98 98 1 1 P
+X PG 5 1750 -750 197 L 98 98 1 1 P
+X VOUT 6 1750 -100 197 L 98 98 1 1 P
+X L2 7 1050 250 197 D 98 98 1 1 P
+X GND 8 1750 -1550 197 L 98 98 1 1 P
+X L1 9 450 250 197 D 98 98 1 1 P
+ENDDRAW
+ENDDEF
+#
+# KiCAD_Demo_0u1F
+#
+DEF KiCAD_Demo_0u1F C 0 40 N N 1 F N
+F0 "C" 100 0 39 H V C CNN
+F1 "KiCAD_Demo_0u1F" 100 -100 28 H V C CNN
+F2 "KiCAD Demo- Buck-Boost Regulator:C0402" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+F4 "https://www.digikey.in/product-detail/en/yageo/CC0402KRX5R9BB104/311-3342-1-ND/6818312" -200 -350 50 H I C CNN "Digikey"
+F5 "CC0402KRX5R9BB104" 0 -350 50 H I C CNN "Part Number"
+F6 "CAP CER 0.1UF 50V X5R 0402" -100 -350 50 H I C CNN "Description"
+F7 "Yageo" -50 -350 50 H I C CNN "Manufacturer"
+ALIAS untitled
+DRAW
+S 50 -50 -50 -50 0 1 0 N
+S 50 0 -50 0 0 1 0 N
+X 1 1 0 100 100 D 50 50 1 1 I
+X 2 2 0 -150 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# KiCAD_Demo_180
+#
+DEF KiCAD_Demo_180 R 0 10 N N 1 F N
+F0 "R" -25 75 50 H V L CNN
+F1 "KiCAD_Demo_180" -75 -75 39 H V L CNN
+F2 "KiCAD Demo- Buck-Boost Regulator:R0603" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+F4 "https://www.digikey.in/product-detail/en/yageo/RC0603JR-07180RL/311-180GRCT-ND/729669" 150 -100 50 H I C CNN "Digikey"
+F5 "RC0603JR-07180RL" 150 -150 50 H I C CNN "Part Number"
+F6 "RES SMD 180 OHM 5% 1/10W 0603" 150 -100 50 H I C CNN "Description"
+F7 "Yageo" 0 0 50 H I C CNN "Manufacturer"
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -70 -30 70 30 0 1 8 N
+X ~ 1 -100 0 30 R 50 50 1 1 P
+X ~ 2 100 0 30 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# KiCAD_Demo_1M
+#
+DEF KiCAD_Demo_1M R 0 10 N N 1 F N
+F0 "R" -25 75 50 H V L CNN
+F1 "KiCAD_Demo_1M" -25 -75 39 H V L CNN
+F2 "KiCAD Demo- Buck-Boost Regulator:R0402" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+F4 "https://www.digikey.in/product-detail/en/yageo/RC0402FR-071ML/311-1-00MLRCT-ND/729462" 0 0 50 H I C BNN "Digikey"
+F5 "Yageo" 0 0 50 H I C BNN "Manufacturer"
+F6 "RC0402FR-071ML" 0 0 50 H I C BNN "Part Number"
+F7 "RES SMD 1M OHM 1% 1/16W 0402" 0 0 50 H I C BNN "Description"
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -70 -30 70 30 0 1 8 N
+X ~ 1 -100 0 30 R 50 50 1 1 P
+X ~ 2 100 0 30 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# KiCAD_Demo_22uF
+#
+DEF KiCAD_Demo_22uF C 0 40 N N 1 F N
+F0 "C" 100 0 39 H V C CNN
+F1 "KiCAD_Demo_22uF" 100 -100 28 H V C CNN
+F2 "KiCAD Demo- Buck-Boost Regulator:C0402" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+F4 "https://www.digikey.in/product-detail/en/samsung-electro-mechanics/CL10A226MO7JZNC/1276-7076-1-ND/7320718" -200 -350 50 H I C CNN "Digikey"
+F5 "CL10A226MO7JZNC" 0 -350 50 H I C CNN "Part Number"
+F6 "CAP CER 22UF 16V X5R 0603" -100 -350 50 H I C CNN "Description"
+F7 "Samsung Electro-Mechanics" -50 -350 50 H I C CNN "Manufacturer"
+ALIAS untitled_copy
+DRAW
+S 50 -50 -50 -50 0 1 0 N
+S 50 0 -50 0 0 1 0 N
+X 1 1 0 100 100 D 50 50 1 1 I
+X 2 2 0 -150 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# KiCAD_Demo_49K9
+#
+DEF KiCAD_Demo_49K9 R 0 10 N N 1 F N
+F0 "R" -25 75 50 H V L CNN
+F1 "KiCAD_Demo_49K9" -75 -75 39 H V L CNN
+F2 "KiCAD Demo- Buck-Boost Regulator:R0603" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+F4 "https://www.digikey.in/product-detail/en/yageo/RC0603FR-0749K9L/311-49-9KHRCT-ND/730212" 150 -100 50 H I C CNN "Digikey"
+F5 "RC0603FR-0749K9L" 150 -150 50 H I C CNN "Part Number"
+F6 "RES SMD 49.9K OHM 1% 1/10W 0603" 150 -100 50 H I C CNN "Description"
+F7 "Yageo" 0 0 50 H I C CNN "Manufacturer"
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -70 -30 70 30 0 1 8 N
+X ~ 1 -100 0 30 R 50 50 1 1 P
+X ~ 2 100 0 30 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# KiCAD_Demo_82K5
+#
+DEF KiCAD_Demo_82K5 R 0 10 N N 1 F N
+F0 "R" -25 75 50 H V L CNN
+F1 "KiCAD_Demo_82K5" -25 -75 39 H V L CNN
+F2 "KiCAD Demo- Buck-Boost Regulator:R0402" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+F4 "https://www.digikey.in/product-detail/en/yageo/RC0402FR-0782K5L/311-82-5KLRDKR-ND/732560" 0 0 50 H I C BNN "Digikey"
+F5 "Yageo" 0 0 50 H I C BNN "Manufacturer"
+F6 "RC0402FR-0782K5L" 0 0 50 H I C BNN "Part Number"
+F7 "RES SMD 82.5K OHM 1% 1/16W 0402" 0 0 50 H I C BNN "Description"
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -70 -30 70 30 0 1 8 N
+X ~ 1 -100 0 30 R 50 50 1 1 P
+X ~ 2 100 0 30 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# KiCAD_Demo_91K
+#
+DEF KiCAD_Demo_91K R 0 10 N N 1 F N
+F0 "R" -25 75 50 H V L CNN
+F1 "KiCAD_Demo_91K" -75 -75 39 H V L CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -70 -30 70 30 0 1 8 N
+X ~ 1 -100 0 30 R 50 50 1 1 P
+X ~ 2 100 0 30 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# KiCAD_Demo_BlockDiagram
+#
+DEF KiCAD_Demo_BlockDiagram BD 0 0 N N 1 F N
+F0 "BD" 400 350 59 H I C CNN
+F1 "KiCAD_Demo_BlockDiagram" 400 350 59 H I C CNN
+F2 "" 400 350 59 H I C CNN
+F3 "" 400 350 59 H I C CNN
+DRAW
+S -100 200 800 -300 0 1 20 f
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# Transistor_FET_Si2319CDS
+#
+DEF Transistor_FET_Si2319CDS Q 0 0 Y N 1 F N
+F0 "Q" 200 75 50 H V L CNN
+F1 "Transistor_FET_Si2319CDS" 200 0 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-23" 200 -75 50 H I L CIN
+F3 "" 0 0 50 H I L CNN
+ALIAS VP0610T BSS84 NTR2101P BSS83P Si2319CDS IRLML6402
+$FPLIST
+ SOT?23*
+$ENDFPLIST
+DRAW
+C 65 0 111 0 1 10 N
+C 100 -70 11 0 1 0 F
+C 100 70 11 0 1 0 F
+P 2 0 1 0 -100 0 10 0 N
+P 2 0 1 0 30 -70 100 -70 N
+P 2 0 1 10 30 -50 30 -90 N
+P 2 0 1 0 30 0 100 0 N
+P 2 0 1 10 30 20 30 -20 N
+P 2 0 1 0 30 70 100 70 N
+P 2 0 1 10 30 90 30 50 N
+P 2 0 1 0 100 -70 100 -100 N
+P 2 0 1 0 100 -70 100 0 N
+P 2 0 1 0 100 100 100 70 N
+P 3 0 1 10 10 75 10 -75 10 -75 N
+P 4 0 1 0 90 0 50 -15 50 15 90 0 F
+P 4 0 1 0 100 -70 130 -70 130 70 100 70 N
+P 4 0 1 0 110 -20 115 -15 145 -15 150 -10 N
+P 4 0 1 0 130 -15 115 10 145 10 130 -15 N
+X G 1 -200 0 100 R 50 50 1 1 I
+X S 2 100 -200 100 U 50 50 1 1 P
+X D 3 100 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
